@@ -10,13 +10,13 @@ function getGoogleCredentials() {
   const clientSecret = process.env.GOOGLE_CLIENT_SECRET
 
   console.log('GOOGLE_CLIENT_ID-->', Boolean(clientId))
-  if (!clientId) {
-    throw new Error('Missing GOOGLE_CLIENT_ID')
-  }
+  // if (!clientId) {
+  //   throw new Error('Missing GOOGLE_CLIENT_ID')
+  // }
 
-  if (!clientSecret) {
-    throw new Error('Missing GOOGLE_CLIENT_SECRET')
-  }
+  // if (!clientSecret) {
+  //   throw new Error('Missing GOOGLE_CLIENT_SECRET')
+  // }
 
   return { clientId, clientSecret }
 }
